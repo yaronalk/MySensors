@@ -463,7 +463,7 @@
  *
  * In some countries there might be limitations, in Germany for example only the range
  * 2400,0 - 2483,5 Mhz is allowed.
- * @see http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Allgemeinzuteilungen/2013_10_WLAN_2,4GHz_pdf.pdf
+ * @see https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Allgemeinzuteilungen/MobilfunkDectWlanCBFunk/2013_10_WLAN_2,4GHz_pdf.pdf
  */
 #ifndef MY_RF24_CHANNEL
 #define MY_RF24_CHANNEL (76)
@@ -2608,6 +2608,12 @@
 #define ARDUINO_ARCH_AVR
 
 /**
+ * @def ARDUINO_ARCH_MEGAAVR
+ * @brief Automatically set when building for megaAVR targets
+ */
+#define ARDUINO_ARCH_MEGAAVR
+
+/**
  * @def ARDUINO_ARCH_STM32F1
  * @brief Automatically set when building for STM32F1 targets
  */
@@ -2778,5 +2784,12 @@
 #define MY_SX126x_MAX_POWER_LEVEL_DBM
 // SOFT-SPI
 #define MY_SOFTSPI
+
+/**
+ * @def MY_ROUTES_SIZE
+ * @brief Specifies the size allocated for routing table
+ */
+#define MY_ROUTES_SIZE
+
 #endif
 /** @}*/ // End of MyConfig group
